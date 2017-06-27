@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
   <head>
@@ -16,10 +16,9 @@
     <meta name="robots" content="index,follow">
     
     
-    <title>Hello World!</title>
+    <title>DevBlog - Personal Blog Template</title>
     
     <!-- Favicon -->
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon/favicon.ico">
     <link rel="apple-touch-icon" sizes="144x144" type="image/x-icon" href="images/favicon/apple-touch-icon.png">
     
@@ -66,13 +65,13 @@
                    <div class="about-fixed">
                     
                      <div class="my-pic">
-                        <img src="images/pic/pic.jpeg" alt="">
+                        <img src="images/pic/my-pic.png" alt="">
                         <a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>
                          <div id="menu" class="collapse">
                            <ul class="menu-link">
-                               <li><a href="#">About</a></li>
-                               <li><a href="#">Work</a></li>
-                               <li><a href="#">Contact</a></li>
+                               <li><a href="about.html">About</a></li>
+                               <li><a href="work.html">Work</a></li>
+                               <li><a href="contact.html">Contact</a></li>
                             </ul>
                          </div>
                         </div>
@@ -82,14 +81,15 @@
                       <div class="my-detail">
                     	
                         <div class="white-spacing">
-                            <h1>Santosh Shaw</h1>
-                            <span>Programmer</span>
+                            <h1>Alex Parker</h1>
+                            <span>Web Developer</span>
                         </div> 
                        
                        <ul class="social-icon">
-                         <li><a href="https://www.facebook.com/devsks" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                         <li><a href="https://in.linkedin.com/in/devsks" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                         <li><a href="https://github.com/devsks" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
+                         <li><a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                         <li><a href="#" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                         <li><a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                         <li><a href="#" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
                         </ul>
 
                     </div>
@@ -101,63 +101,79 @@
                 
                 
                  
-                 <!-- Blog Post (Right Sidebar) Start -->
+                 <!-- About Me (Right Sidebar) Start -->
                  <div class="col-md-9">
                     <div class="col-md-12 page-body">
                     	<div class="row">
                     		
                             
                             <div class="sub-title">
-                           		<h2>My Blog</h2>
-                                <a href="#"><i class="icon-envelope"></i></a>
+                           		<h2>About Me</h2>
+                                <a href="contact.html"><i class="icon-envelope"></i></a>
                              </div>
                             
                             
                             <div class="col-md-12 content-page">
+                              <div class="col-md-12 blog-post">
                             	
-                                <!-- Blog Post Start -->
-                                <div class="col-md-12 blog-post">
-                                    <div class="post-title">
-                                      <a href="single.html"><h1>How to use '%n' in C?</h1></a>
-                                    </div>  
-                                    <div class="post-info">
-                                          <div class="prose" itemprop="articleBody"><p>You may be knowing to trick to calculate the length of a string using <strong>printf</strong>() method but below I have discussed a far better approach.</p> 
-  <p>In order to find the numbers of characters in a string, we can use <strong>flag characters</strong> in C.</p> 
-  <p><u><em>The<strong> [%n]</strong> format identifier stores the numbers of characters read by the input stream (i.e stdin) to the given address</em></u>. Eg:</p> 
-  <pre spellcheck="false"><span class="hljs-meta">#include &lt;stdio.h&gt;</span>
-  ﻿<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
-  ﻿</span>{
-      <span class="hljs-keyword">char</span> st[<span class="hljs-number">123</span>];
-      <span class="hljs-keyword">int</span> len;
-      
-      <span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%s%n"</span>, st, &amp;len); <span class="hljs-comment">//length is getting stored at location of len</span>
-      <span class="hljs-built_in">printf</span>(<span class="hljs-string">"The length of the entered string is %i."</span>, len);
-      
-      <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
-
-  }
-
-  </pre> 
-  <p><strong>Input:</strong> devsks</p> 
-  <p><strong>Output</strong>:</p> 
-  <p>The length of the entered string is 6.</p> 
-  <p><strong> Manual page states that: </strong>Nothing is expected from '%n'; instead, the number of characters consumed thus far from the input is stored
-           through the next pointer, which must be a pointer to int.  This is not a conversion, although it can
-           be suppressed with the * flag.<br>After the <strong>scanf</strong>() statement has completed the length of the string is saved in the address of <strong>len</strong>&nbsp;variable(i.e <strong>&amp;len</strong>).</p> 
-  <p>We can also use this identifier to count the numbers of digits of a number and speed up our program runtime etc.</p></div>
-                              
-                                      <span>June 26, 2017 / by <a href="#" target="_blank">Santosh Kumar Shaw</a></span>
-                                    </div>  
-                                    <a href="#" class="button button-style button-anim fa fa-long-arrow-right"><span>Read More</span></a>
+                                
+                                <!-- My Intro Start -->
+                                <div class="post-title margin-bottom-30">
+                                    <h1>Hi, I am <span class="main-color">Alex Parker</span></h1>
+                                    
+                                    <ul class="knowledge">
+                                      <li class="bg-color-1">Web Designer</li>
+                                      <li class="bg-color-4">Web Developer</li>
+                                      <li class="bg-color-6">Freelancer</li>
+                                      <li class="bg-color-5">Consultant</li>
+                                     </ul>
+                                     
+                                   </div>
+                                   <!-- My Intro End -->
+                                    
+                                    
+                                    <p>I am in the website field since 2004 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at quam at orci commodo hendrerit vitae nec eros. Vestibulum neque est, imperdiet nec tortor nec, tempor semper metus. <b>I am a developer</b>, et accumsan nisi. Duis laoreet pretium ultricies. Curabitur rhoncus auctor nunc congue sodales. Sed posuere nisi ipsum, eget dignissim nunc dapibus eget. Aenean elementum sollicitudin sapien ut sapien fermentum aliquet mollis. Curabitur ac quam orci sodales quam ut tempor. suspendisse, gravida in augue in, interdum <b><a href="work.html" data-toggle="tooltip" data-placement="top" title="Check out my work.">Work</a></b> bibendum dui. Suspendisse sit amet justo sit amet diam fringilla commodo. Praesent ac magna at metus malesuada tincidunt non ac arcu. Nunc gravida eu felis vel elementum. Vestibulum sodales quam ut tempor tempor Donec sollicitudin imperdiet nec tortor nec, tempor semper metus..</p>
+                                   
+                                 
+                                 
+                                 <!-- Video Start -->
+                                 <div class="video-box margin-top-40 margin-bottom-80">
+                                  <div class="video-tutorial">
+                                   <a class="video-popup" href="https://www.youtube.com/watch?v=O2Bsw3lrhvs" title="My Thought">
+                                   <img src="images/pic/my-pic.png" alt="">
+                                   </a>                           
+                                  </div>
+                                 <p>Take a look about my thought on website design.</p>
                                 </div>
-                                <!-- Blog Post End -->
+                                <!-- Video End -->
+                                  
+                                  
+                                  
+                                  
+                                  <!-- My Service Start -->
+                                  <div class="post-title">
+                                    <h1>My <span class="main-color">Services</span></h1> 
+                                   </div>
+                                   
+                                  <div class="list list-style-2 margin-top-30">
+                                    <ul>
+                                      <li>Website Design</li>
+                                      <li>Website Development</li>
+                                      <li>Wordpress Theme Development</li>
+                                      <li>Mobile Apps UI/UX Design</li>
+                                      <li>Online Software Development</li>
+                                      <li>E-commerce Development</li>
+                                      <li>UI/UX Consulting</li>
+                                     </ul>
+                                   </div>
+                                   <!-- My Service End --> 
+                                  
+                                </div>  
                                 
-                                
-                                <div class="col-md-12 text-center">
-                                 <a href="javascript:void(0)" id="load-more-post" class="load-more-button">Load</a>
-                                 <div id="post-end-message"></div>
-                                </div>
-                                
+                                  <div class="col-md-12 text-center">
+                                    <a href="contact.html" data-toggle="tooltip" data-placement="top" title="Visit on my contact page for hire me." class="load-more-button">Hire</a>
+                                   </div>
+                                  
                              </div>
                               
                          </div>
@@ -179,17 +195,19 @@
                            </div>
                            <!-- Subscribe Form End -->
                            
+                           
                          </div>
                      
                      
+                       
                        <!-- Footer Start -->
                        <div class="col-md-12 page-body margin-top-50 footer">
                           <footer>
                           <ul class="menu-link">
                                <li><a href="index.html">Home</a></li>
-                               <li><a href="#">About</a></li>
-                               <li><a href="#">Work</a></li>
-                               <li><a href="#">Contact</a></li>
+                               <li><a href="about.html">About</a></li>
+                               <li><a href="work.html">Work</a></li>
+                               <li><a href="contact.html">Contact</a></li>
                             </ul>
                             
                           <p>© Copyright 2016 DevBlog. All rights reserved</p>
@@ -198,7 +216,7 @@
 						  <!-- UiPasta Credit Start -->
                           <div class="uipasta-credit">Design By <a href="http://www.uipasta.com" target="_blank">UiPasta</a></div>
                           <!-- UiPasta Credit End -->
-
+						  
                            
                          </footer>
                        </div>
@@ -206,11 +224,13 @@
                      
                      
                   </div>
-                  <!-- Blog Post (Right Sidebar) End -->
+                  <!-- About Me (Right Sidebar) End -->
                 
             </div>
          </div>
       </div>
+    
+      
     
     
     
@@ -222,11 +242,7 @@
     <!-- All Javascript Plugins  -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/plugin.js"></script>
-    <link rel="stylesheet" href="/path/to/styles/default.css">
-<script src="/path/to/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
     <!-- Main Javascript File  -->
     <script type="text/javascript" src="js/scripts.js"></script>
 
