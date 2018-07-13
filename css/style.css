@@ -797,7 +797,20 @@ color: #0077B5;
   color: #AA2200;
 }
 
-i:hover{
-  color: #ffee10;
+.service-box i:hover{
+
   text-shadow: 0 0 35px #10b3ff;
+}
+
+table{    line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: rgba(0,0,0,0.87);}
+
+  #user-details {
+    float: left;
+    margin-left: 9%;
+}
+.center1, .center-align {
+  text-align: center;
 }
