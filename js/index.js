@@ -87,7 +87,7 @@
 
 
 
-/*
+
 
 var c = document.getElementById('c');
 var cxt = c.getContext("2d");
@@ -149,4 +149,4 @@ function draw(){
 }
   
 }
-setInterval(draw,63);*/
+setInterval(draw,63);
