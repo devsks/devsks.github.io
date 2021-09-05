@@ -610,8 +610,8 @@ fieldset[disabled] .btn-primary:hover {
   position: relative;
   height: 160px;
   width: 300px;
-  background: url("https://wallpapersite.com/images/wallpapers/mountains-3966x2644-lg-nexus-android-stock-4k-2538.jpg") no-repeat;
-  background-size: cover;
+  background: url("https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png") no-repeat;
+  background-size: contain;
   background-position: 0 -20px;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
